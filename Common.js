@@ -13,7 +13,8 @@ function createHomeCard(isHomepage) {
   if (!isHomepage) {
     isHomepage = false;
   }
-  var homeCard = cards.homeCard();
+  var myTeams = PropertiesService.getUserProperties().getProperty('teams');
+  var homeCard = cards.homeCard(myTeams);
   // var createTeamCard = cards.createTeam();
   
   return homeCard.build();

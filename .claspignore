@@ -4,3 +4,4 @@
 !Common.js
 !ui/Cards.js
 !controller/NavigateToCard.js
+!controller/BuildTeamListSection.js

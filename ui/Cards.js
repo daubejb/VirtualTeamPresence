@@ -1,5 +1,5 @@
 var cards = {
-  homeCard: function () {
+  homeCard: function (myTeams) {
     var footer = CardService.newFixedFooter()
       .setPrimaryButton(CardService.newTextButton()
         .setText('feedback + issues')
@@ -7,12 +7,13 @@ var cards = {
           .setUrl('https://github.com/daubejb/VirtualTeamPresence/issues/new')
         )
       );
-
+    
     var cardHeader = CardService.newCardHeader()
     .setTitle('My Teams')
     .setImageStyle(CardService.ImageStyle.CIRCLE)
     .setImageUrl('https://storage.googleapis.com/sosgllobalimages/teams.png');
 
+    var teamsSection = buildTeamListSection(myTeams);
     var createNewTeamAction = CardService.newAction()
       .setFunctionName('navigateToCard')
       .setParameters({ 'navigation': 'createNewTeam' });
@@ -30,6 +31,7 @@ var cards = {
 
     var card = CardService.newCardBuilder()
       .setHeader(cardHeader)
+      .addSection(teamsSection)
       .addSection(section)
       .setFixedFooter(footer);
 
