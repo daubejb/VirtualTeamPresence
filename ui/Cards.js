@@ -8,6 +8,11 @@ var cards = {
         )
       );
 
+    var cardHeader = CardService.newCardHeader()
+    .setTitle('My Teams')
+    .setImageStyle(CardService.ImageStyle.CIRCLE)
+    .setImageUrl('https://storage.googleapis.com/sosgllobalimages/teams.png');
+
     var createNewTeamAction = CardService.newAction()
       .setFunctionName('navigateToCard')
       .setParameters({ 'navigation': 'createNewTeam' });
@@ -24,6 +29,7 @@ var cards = {
       .addWidget(buttonSet);
 
     var card = CardService.newCardBuilder()
+      .setHeader(cardHeader)
       .addSection(section)
       .setFixedFooter(footer);
 
