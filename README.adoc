@@ -1,4 +1,5 @@
 = Virtual Team Presence - A GSuite Add On
 
 Welcome Google Apps Script developers!
+
 To avoid typing Google Apps Script dozens of times, GAS will be used onwards.
