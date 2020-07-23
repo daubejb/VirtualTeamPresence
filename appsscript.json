@@ -1,0 +1,39 @@
+{
+  "timeZone": "America/New_York",
+  "dependencies": {
+    "enabledAdvancedServices": [{
+      "userSymbol": "Drive",
+      "serviceId": "drive",
+      "version": "v2"
+    }],
+    "libraries": [{
+      "userSymbol": "OAuth2",
+      "libraryId": "1B7FSrk5Zi6L1rSxxTDgDEUsPzlukDsi4KGuTMorsTQHhGBzBkMun4iDF",
+      "version": "38"
+    }]
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "oauthScopes": ["https://www.googleapis.com/auth/script.locale", "https://www.googleapis.com/auth/drive", "https://www.googleapis.com/auth/script.external_request"],
+  "runtimeVersion": "DEPRECATED_ES5",
+  "addOns": {
+    "common": {
+      "name": "Virtual Team Presence",
+      "logoUrl": "https://storage.googleapis.com/sosgllobalimages/outline_home_work_black_48dp.png",
+      "useLocaleFromApp": true,
+      "homepageTrigger": {
+        "runFunction": "onHomepage",
+        "enabled": true
+      },
+      "universalActions": [{
+        "label": "Feedback or Ideas",
+        "openLink": "https://github.com/daubejb/VirtualTeamPresence/issues/new"
+      }]
+    },
+    "gmail": {
+    },
+    "drive": {
+    },
+    "calendar": {
+    }
+  }
+}
