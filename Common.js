@@ -13,9 +13,10 @@ function createHomeCard(isHomepage) {
   if (!isHomepage) {
     isHomepage = false;
   }
-  var createTeamCard = cards.createTeam();
+  var homeCard = cards.homeCard();
+  // var createTeamCard = cards.createTeam();
   
-  return createTeamCard.build();
+  return homeCard.build();
 }
 
 /**

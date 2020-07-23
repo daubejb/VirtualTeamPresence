@@ -3,3 +3,4 @@
 !appsscript.json
 !Common.js
 !ui/Cards.js
+!controller/NavigateToCard.js
